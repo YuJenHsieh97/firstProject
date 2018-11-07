@@ -72,8 +72,16 @@ div{
     font-size: 10px;
     top:50%;
     left:50%;
-    /* animation: up;
-    animation-duration: 3s; */
+}
+
+.big{
+  animation: up;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+.button:hover{
+  background-color:White;
 }
 
 .img3{
@@ -118,7 +126,7 @@ img{
 
 @keyframes up{
   0% {transform:translate3d(0,0,0);}
-  50%{transform: perspective(800px)translate3d(10px,-0,800px);}
+  50%{transform: perspective(30px)translate3d(10px,-0,800px);}
   100% {transform:translate3d(0,0,0);}
 }
 
