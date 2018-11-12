@@ -12,11 +12,14 @@ function showSlides() {
     slides[slideIndex-1].style.display = "block";
     setTimeout(showSlides, 2000);
 }
-// console.log(window.scrollY);
-function enlarge(){
 
-  let plus = document.querySelector("#mybutton");
-  if (298 <= document.scrollY){
-    plus.className += " big";
-  }
-}
+function enlarge() {
+ document.getElementById('mybutton').style.height="100%";
+ document.getElementById('mybutton').style.width="100%";
+ }
+
+
+function reset() {
+ document.getElementById('mybutton').style.height="10%";
+ document.getElementById('mybutton').style.width="10%";
+ }
